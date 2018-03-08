@@ -4,5 +4,6 @@ Rails.application.routes.draw do
 
   namespace :v1 do
     get "/guess_query_url" => "games#guess_query_method"
+    get "/real_guess_query_url" => "games#real_guess_query_method"
   end
 end
