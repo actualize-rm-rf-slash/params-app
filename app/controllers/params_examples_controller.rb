@@ -9,4 +9,8 @@ class ParamsExamplesController < ApplicationController
       age_info: "Your age is #{params["input_age"]}"
     }
   end
+
+  def url_segment_method
+    render json: {message: "Goodbye world!", value: params["input_something"]}
+  end
 end
